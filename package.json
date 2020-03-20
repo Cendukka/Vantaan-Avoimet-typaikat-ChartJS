@@ -1,0 +1,35 @@
+{
+  "name": "vantaan-avoimet-typaikat-chartjs",
+  "version": "1.0.0",
+  "description": "Simple example with node.js how to use JSON API to fetch json-data and creat a chart from it using Chart.js",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cendukka/Vantaan-Avoimet-typaikat-ChartJS.git"
+  },
+  "keywords": [
+    "nodejs",
+    "chartjs",
+    "json",
+    "api"
+  ],
+  "author": "Samuli Lehtonen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cendukka/Vantaan-Avoimet-typaikat-ChartJS/issues"
+  },
+  "homepage": "https://github.com/Cendukka/Vantaan-Avoimet-typaikat-ChartJS#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chart.js": "^2.9.3",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "mongoose": "^5.9.5",
+    "nodemon": "^2.0.2"
+  }
+}

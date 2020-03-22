@@ -5,6 +5,6 @@ const router = express.Router();
 //require controllers
 const mainController = require("../controllers/mainController");
 
-router.get("/", mainController.showMainPage);
+router.get("/", mainController.renderMainPage);
 
 module.exports = router;

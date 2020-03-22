@@ -1,6 +1,6 @@
 "use strict"
 
 
-exports.showMainPage = (req, res) => {
+exports.renderMainPage = (req, res) => {
     res.render("index");
 };

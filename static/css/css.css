@@ -1,0 +1,104 @@
+
+body {
+  margin: 0;
+  /* background-image: url(../images/kupittaanUrheiluhalli.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#nav {
+  width: 80%;
+  margin:  1% 10%;
+  background-color: #f2f2f2;
+  border-bottom: solid 8px #525564;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #ccc;
+  position: absolute;
+  top: 0;
+}
+
+#title {
+  color: black;
+  margin: 0;
+  font-family: "Baloo Bhaina";
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+#nav a {
+  text-decoration: none;
+}
+
+#navbarButtons{
+  float:right;
+  position:relative;
+  left:-50%;
+  text-align:left;
+}
+#navbarButtons ul{
+  list-style:none;
+  position:relative;
+  left:50%;
+}
+
+.nav-align {
+  text-align: center;
+  padding: 3px 0;
+}
+
+.container {
+  padding: 2% 10%;
+  background-color: #f2f2f2;
+  border-radius: 25px;
+  margin-top: 3%;
+  
+}
+
+.button {
+  background-color: #74828F;
+  padding: 0.3vw 3vw;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #BEB9B5;
+}
+
+.reservation-form input {
+  display: block;
+}
+
+.contact-listing {
+  width: 100%;
+  padding: 5px;
+  border-bottom: 1px solid #000;
+  display: inline-block;
+}
+
+.contact-container{
+  background: #aaa;
+}
+
+.location {
+  padding: 5px;
+}
+.row{
+  padding: 2% 5%;
+}
+.textMiddle{
+  text-align: center;
+}
+.navbarButtons li{
+  float:left;
+  position:relative;
+}
+.marginAuto{
+  margin:auto;
+}
+

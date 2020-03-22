@@ -1,11 +1,16 @@
 
 body {
-  margin: 0;
-  /* background-image: url(../images/kupittaanUrheiluhalli.jpg); */
+  margin: 100;
+  background-image: url("../pictures/vantaa.jpg") !important; 
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed !important;
+}
+img {
+  width: 100%;
 }
 
+/*----ID----*/
 #nav {
   width: 80%;
   margin:  1% 10%;
@@ -24,10 +29,6 @@ body {
   text-transform: uppercase;
 }
 
-img {
-  width: 100%;
-}
-
 #nav a {
   text-decoration: none;
 }
@@ -43,7 +44,19 @@ img {
   position:relative;
   left:50%;
 }
-
+#fetchInfoDiv{
+  font-weight: 500;
+  border-radius: 20px;
+  border-color: #000;
+  background-color: #9c9fb1;
+  padding: 2%;
+}
+#infoDiv{
+  font-weight: 500;
+  background-color: #aaa;
+  padding: 2%;
+}
+/*----CLASSES----*/
 .nav-align {
   text-align: center;
   padding: 3px 0;
@@ -51,10 +64,9 @@ img {
 
 .container {
   padding: 2% 10%;
-  background-color: #f2f2f2;
+  background-color: rgba(220, 220, 220, 0.85);
   border-radius: 25px;
   margin-top: 3%;
-  
 }
 
 .button {
@@ -91,7 +103,7 @@ img {
 .row{
   padding: 2% 5%;
 }
-.textMiddle{
+.textAlignCenter{
   text-align: center;
 }
 .navbarButtons li{
@@ -101,4 +113,5 @@ img {
 .marginAuto{
   margin:auto;
 }
+
 

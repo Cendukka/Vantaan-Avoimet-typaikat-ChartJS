@@ -1,22 +1,52 @@
-
-<h1 class="textMiddle">Vantaan avoinna olevat työpaikat</h1>
+<!-- The content on the page goes here when index view is rendered -->
+<h1 class="textAlignCenter">Vantaan avoinna olevat työpaikat</h1>
 <div class="row">
-    <div id="pieAllCareer" class="col-md-6 textMiddle">
-        <canvas id="allJobs" width="100" height="100"></canvas>
+    <div id="pieAllCareer" class="col-md-6 textAlignCenter">
+        <canvas id="allJobsChart" width="100" height="100"></canvas>
     </div>
-    <div id="infoDiv" class="col-md-6 textMiddle">
-        <p></p>
-        <br>
-        <br>
-        <button id="fetchAll" >Hae työpaikat uudelleen</button>
-        
+    <div id="infoDiv" class="col-md-6">
+        <h3 class="textAlignCenter">Sivun toimintaperiaate:</h3>
+        <p>
+            - Sivulla on tarkoitus havainnollistaa Vantaan työpaikkojen määrät ja jakaa ne toimialoittain käyttäen graaffista diagrammia.<br><br>
+            
+            - Diagrammin osa-alueita, segmenttejä, painamalla voit valita kyseisen toimialan ja saada tarkempaa tietoa valitsemasi toimialan työpaikoista
+            sivun alalaitaan syntyvästä taulukosta.<br><br>
+
+            - Taulukosta löytyy työpaikan parustiedot: 
+            <ul>
+                <li>Työorganisaatio,</li>
+                <li>tuleva työtehtävä,</li>
+                <li>toimipaikan osoite,</li>
+                <li>milloin haku päättyy ja</li>
+                <li>linkki työpaikkailmoituksen sivuille josta saa vielä tarkempaa tietoa ilmoituksesta ja mahdollisuuden hakea toimeen.</li>
+            </ul>
+        </p>
+        <div id="fetchInfoDiv" class="textAlignCenter">
+            <p>Painamalla alla olevaa "Hae työpaikat uudelleen" -painiketta, voit päivittää työpaikat ja grafiikan.</p>
+            <button id="fetchAll" type="button" class="btn btn-info" >Hae työpaikat uudelleen</button>
+        </div>
     </div>
 </div>
-<div class="row"></div>
+<div class="row">
     <div id="tableDiv" class="col-md-12 center">
-        <section>
-            <h2 class="textMiddle" style="color: black;">Työpaikat</h2>
-            <h4 class="textMiddle" style="color: black;">Valittu toimiala: </h4>
-        </section>
+        <div id="tableHeader">
+            <h2 class="textAlignCenter" style="color: black;">Työpaikat</h2>
+            <h4 class="textAlignCenter" style="color: black;">Valittu toimiala:</h4>
+        </div>
+        <div>
+            <table id="jobTable" class="table table-bordered" style="float: middle;">
+                <thead id="dataHead">
+                    <tr>
+                        <th scope="col">Organisaatio</th>
+                        <th scope="col">Työtehtävä</th>
+                        <th scope="col">Osoite</th>
+                        <th scope="col">Haku päättyy</th>
+                        <th scope="col">Linkki ilmoitukseen</th>
+                    </tr>
+                </thead>
+                <tbody id="dataBody">
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>

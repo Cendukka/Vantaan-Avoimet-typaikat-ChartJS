@@ -1,3 +1,7 @@
+/**
+ * Router file to handle all incoming REST requests through router middleware
+ *  -> redirects them to appropriate controller to handle the actions
+ */
 "use strict"
 
 const express = require('express');
